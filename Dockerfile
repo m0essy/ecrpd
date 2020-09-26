@@ -1,3 +1,3 @@
-FROM pvtdancer/meteord:latest
+FROM pvtdancer/meteord:node-12.18.4-base
 
-apt-get install -y --no-install-recommends libreoffice
+RUN apt-get install -y --no-install-recommends libreoffice
