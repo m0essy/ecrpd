@@ -23,7 +23,7 @@ jobs:
         password: ${{ secrets.DOCKER_PASS }}
         
     - name: Docker Build
-      run: docker build . --file Dockerfile --build_arg EXACT_NODE_VERSION=true --build-arg NODE_VERSION=14.18.1 -t latest
+      run: docker build . --file Dockerfile --build-arg EXACT_NODE_VERSION=true --build-arg NODE_VERSION=14.18.1 -t latest
           
     - name: Docker Push 
       run: docker push ecrp
