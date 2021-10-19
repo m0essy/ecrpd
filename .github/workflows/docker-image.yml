@@ -32,7 +32,7 @@ jobs:
         # Tags override for Docker image
         tags: ecrp
         # Target Docker registry
-        registry: pvtdancer/ecrp
+        registry: pvtdancer
         # Location of Dockerfile, if not Dockerfile in root directory
         dockerfile: Dockerfile
         # Docker build arguments passed via --build-arg
