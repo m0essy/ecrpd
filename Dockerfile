@@ -1,3 +1,5 @@
 FROM zodern/meteor
 
-RUN sudo apt-get install -y --no-install-recommends libreoffice
+USER root
+RUN apt-get install -y --no-install-recommends libreoffice
+USER app
