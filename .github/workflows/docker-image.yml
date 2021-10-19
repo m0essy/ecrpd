@@ -23,7 +23,7 @@ jobs:
         password: ${{ secrets.DOCKER_PASS }}
         
     - name: Docker Build
-      run: docker build . --file Dockerfile --build-arg EXACT_NODE_VERSION=true --build-arg NODE_VERSION=14.18.1 -t latest
+      run: docker build . --file Dockerfile --build-arg EXACT_NODE_VERSION=true --build-arg NODE_VERSION=14.18.1 -t pvtdancer/ecrp:latest
           
     - name: Docker Push 
       run: docker push pvtdancer/ecrp:latest
